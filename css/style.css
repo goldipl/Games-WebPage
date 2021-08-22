@@ -1,0 +1,499 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Changa', sans-serif;
+    font-weight: 400;
+    background-color: #FFFFFF;
+    color: #000000;
+    font-size: 18px;
+    line-height: 140%;
+}
+
+.textLogo {
+    font-family: 'Odibee Sans', cursive;
+    color: #d80a0a !important;
+    font-size: 1.8rem !important;
+    padding: 1.0rem;
+}
+
+strong {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 2.0rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+.h1left {
+    text-align: left;
+    position: relative;
+    padding-left: 30px;
+}
+
+.h2left {
+    text-align: left;
+    position: relative;
+    padding-left: 30px;
+    font-size: 1.4rem;
+}
+
+.h1left::before,
+.h2left::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    left: 0;
+    bottom: 4px;
+    background-color: #d80a0a;
+}
+
+.h1TopPadding {
+    padding-top: 80px;
+}
+
+
+/* === Navigation === */
+
+.nav {
+    background-color: #FFFFFF;
+    position: fixed;
+    box-shadow: 3px 3px 24px 0 #d80a0a;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 0.6rem 2.0rem;
+    z-index: 999;
+    line-height: 100%;
+    flex-direction: column;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.nav a.menuListItem.first {
+    padding: 0.5rem 1rem;
+}
+
+.nav a.menuListItem {
+    padding: 0.5rem 1.0rem;
+}
+
+.nav ul {
+    list-style: none;
+}
+
+.menuList {
+    display: flex;
+    align-items: center;
+}
+
+.menuList li {
+    display: block;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 2px dashed #d80a0a;
+    cursor: pointer;
+    margin-left: 16px;
+}
+
+.menuList li li {
+    transition: 0.2s linear;
+    margin-left: 0;
+    border: none;
+}
+
+.menuList li:hover {
+    border: 2px solid #d80a0a;
+}
+
+.menuList li a:hover {
+    color: #29292F;
+}
+
+a.first {
+    font-weight: 500;
+}
+
+
+/* === menuListDrop === */
+
+.menuListDrop {
+    position: relative;
+}
+
+.menuListDrop-menu,
+.menuListRight {
+    position: absolute;
+    background: #FFFFFF;
+    width: 100%;
+    top: 40px;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: 3px 3px 9px 3px rgba(0, 0, 0, .1);
+    transition: all 0.4s linear;
+}
+
+.menuListRight {
+    top: 0;
+    left: 110%;
+}
+
+.menuListItem {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.menuListDrop:hover .menuListDrop-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menuListDrop-right:hover .menuListRight {
+    left: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* === Navigation Menu Button === */
+
+.menuButton {
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menuButton__bars {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 2px;
+    background-color: #d80a0a;
+    margin: 10px 0;
+    transition: 0.4s;
+}
+
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-3px, 3px);
+    transform: rotate(-45deg) translate(-3px, 3px);
+}
+
+.open .bar2 {
+    display: none;
+}
+
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, 6px);
+    transform: rotate(45deg) translate(-6px, -6px);
+}
+
+.fas.fa-angle-down {
+    margin-left: 8px;
+}
+
+@media (max-width: 340px) {
+    .menuList li a {
+        font-size: 1.1rem;
+        line-height: 1.1rem;
+    }
+}
+
+.headerBig {
+    height: 100vh;
+    background: url(../img/background01.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.whiteSection {
+    background-color: #fff;
+    color: black;
+}
+
+.colorSection {
+    background: #fc8d8d;
+    color: white;
+    background: url(../img/background01.jpg);
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-size: auto;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+section h1,
+section h2 {
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 24px;
+}
+
+section {
+    padding: 80px 0;
+}
+
+section p {
+    width: 75%;
+    text-align: left;
+    margin: 0 auto;
+    padding: 12px;
+}
+
+
+/* Img Text Section */
+
+.text_Img_Section {
+    display: flex;
+    width: 75%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.text_Img_Section .text_Section {
+    width: 100%;
+}
+
+.text_Img_Section .text_Section_p {
+    width: 100%;
+}
+
+.text_Img_Section .img_Section {
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    margin-left: 40px;
+}
+
+.text_Img_Section .img_Section img {
+    border-radius: 25px;
+}
+
+
+/* ==== FOOTER ==== */
+
+footer {
+    text-align: center;
+}
+
+.footerSection {
+    background: none;
+    background-color: #d80a0a;
+    color: #FFFFFF;
+}
+
+.footerCopyright {
+    padding: 16px;
+}
+
+
+/* ===== CONTAINER LABELS ===== */
+
+.citem {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerLabels {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    margin: 40px auto;
+}
+
+.containerLabels>div {
+    flex-basis: 30%;
+    font-size: 20px;
+    padding: 24px;
+    margin: 1%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    margin-bottom: 10px;
+    border: 3px dashed #FFFFFF;
+    flex-grow: 1;
+}
+
+.containerLabels_Text p {
+    width: 100%;
+}
+
+
+/* TEXT MARGIN */
+
+.text_margin_Section {
+    padding-top: 24px;
+}
+
+.left {
+    text-align: left;
+}
+
+
+/* CENTERED TEXT ON MAIN PAGE */
+
+h1.centeredText {
+    position: absolute;
+    top: 50%;
+    line-height: 4.0rem;
+    text-align: center;
+    left: 0;
+    right: 0;
+    color: #FFFFFF;
+    font-size: 4.0rem;
+    z-index: 1;
+}
+
+
+/* ===== MEDIA QUERIES ===== */
+
+@media (max-width: 1100px) {
+    .menuButton {
+        display: flex;
+    }
+    .nav .menuList {
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        top: 100%;
+        right: 0;
+        background: #FFFFFF;
+        display: block;
+        padding: 1.0rem;
+        line-height: 1.6rem;
+        overflow-y: auto;
+        transform: translateX(-100vw);
+        transition: 0.3s linear;
+        z-index: -1;
+    }
+    .menuList.open {
+        transform: translateX(0);
+    }
+    .menuList li {
+        margin: 15px 10px;
+    }
+    .menuList li a {
+        padding: 0 1rem;
+        display: block;
+        font-size: 1.3rem;
+    }
+    .menuList li:hover {
+        background-color: transparent;
+    }
+    .menuList .menuListDrop-menu,
+    .menuList .menuListRight {
+        position: static;
+        opacity: 1;
+        top: 4rem;
+        visibility: visible;
+        width: 100%;
+        max-height: 0;
+        transform: scaleY(0);
+        transform-origin: top;
+        overflow: hidden;
+        transition: all 0.2s linear;
+        box-shadow: none;
+    }
+    .expandList.open+.expand {
+        max-height: 100%;
+        transform: scaleY(1);
+    }
+    .expand li {
+        margin: 0;
+    }
+    .expand li a {
+        font-size: 1.1rem;
+        border-bottom: 1px solid #d80a0a;
+        padding-bottom: 0.9rem;
+    }
+    .expand li:last-of-type a {
+        border-bottom: none;
+        padding-bottom: 0.4rem;
+    }
+    .expand li:first-of-type a {
+        padding-top: 0.4rem;
+    }
+    .fas.fa-angle-right {
+        margin-left: 8px;
+    }
+    .menuListDrop-menu.expand.middle,
+    .menuListDrop-menu.expand.long {
+        width: 100%;
+        border-radius: 15px;
+    }
+    .menuList .menuListFirstLine:last-of-type {
+        margin-bottom: 100px;
+    }
+    section h1,
+    section h2,
+    section p {
+        width: 90%;
+    }
+    .text_Img_Section {
+        flex-direction: column;
+        width: 90%;
+    }
+    .text_Img_Section .img_Section {
+        width: 60%;
+        margin-left: 0;
+    }
+    .menuList li:hover {
+        border: none;
+    }
+}
+
+
+/* SMALLER CENTERED TEXT ON MAIN PAGE ON SMARTPHONES 
+AND SMALLER DEVICES ALSO */
+
+@media (min-width: 1024px) {
+    h1.centeredText {
+        font-size: 4.0rem;
+    }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+    h1.centeredText {
+        font-size: 3.5rem;
+        word-wrap: break-word;
+    }
+}
+
+@media (max-width: 639px) {
+    h1.centeredText {
+        font-size: 2.5rem;
+        word-wrap: break-word;
+    }
+}
