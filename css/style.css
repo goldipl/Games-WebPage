@@ -81,7 +81,7 @@ h2 {
 
 .nav a {
     text-decoration: none;
-    color: #000000;
+    color: #FFFFFF;
 }
 
 .nav a.menuListItem.first {
@@ -104,7 +104,7 @@ h2 {
 .menuList li {
     display: block;
     margin: 0 auto;
-    background-color: #ffffff;
+    background-color: #222222;
     border: 2px dashed #d80a0a;
     cursor: pointer;
     margin-left: 16px;
