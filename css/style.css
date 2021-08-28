@@ -376,6 +376,29 @@ h1.centeredText {
     z-index: 1;
 }
 
+h1.centeredText:after {
+    display: block;
+    content: '';
+    width: 80%;
+    height: 4px;
+    background: #FFFFFF;
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+h1.centeredText:before {
+    display: block;
+    content: '';
+    width: 80%;
+    height: 4px;
+    background: #FFFFFF;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
 
 /* ===== MEDIA QUERIES ===== */
 
