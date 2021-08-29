@@ -563,4 +563,7 @@ AND SMALLER DEVICES ALSO */
     .bigPhotoTextContainer .photoTextContainer {
         flex-basis: 100%;
     }
+    .bigPhotoTextContainer {
+        width: 95%;
+    }
 }
