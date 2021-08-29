@@ -435,6 +435,15 @@ h1.centeredText:before {
     margin: 20px 20px;
 }
 
+.photoTextContainer:hover .textContainer {
+    color: #FFFFFF;
+}
+
+.photoTextContainer:hover {
+    background: linear-gradient(#d80a0a, #222222 40%);
+    border-radius: 25px;
+}
+
 
 /* ===== MEDIA QUERIES ===== */
 
