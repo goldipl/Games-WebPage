@@ -415,6 +415,7 @@ h1.centeredText:before {
     display: flex;
     flex-direction: column;
     flex-basis: 25%;
+    margin: 20px 0;
 }
 
 .bigPhotoTextContainer .photoContainer {
