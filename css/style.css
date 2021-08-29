@@ -428,6 +428,7 @@ h1.centeredText:before {
 .bigPhotoTextContainer .photoContainer img {
     width: 200px;
     height: auto;
+    margin: 16px 16px 0 16px;
 }
 
 .bigPhotoTextContainer .textContainer {
