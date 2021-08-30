@@ -231,6 +231,16 @@ a.first {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    animation: zooming 4s infinite alternate;
+}
+
+@keyframes zooming {
+    0% {
+        background-size: 115% 115%;
+    }
+    100% {
+        background-size: 100% 100%;
+    }
 }
 
 .whiteSection {
