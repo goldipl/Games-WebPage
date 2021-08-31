@@ -474,7 +474,7 @@ h1.centeredText:before {
 
 /* ===== MEDIA QUERIES ===== */
 
-@media (max-width: 1239px) {
+@media (max-width: 1299px) {
     .bigPhotoTextContainer .photoTextContainer {
         flex-basis: 50%;
     }
