@@ -474,6 +474,12 @@ h1.centeredText:before {
 
 /* ===== MEDIA QUERIES ===== */
 
+@media (max-width: 1239px) {
+    .bigPhotoTextContainer .photoTextContainer {
+        flex-basis: 50%;
+    }
+}
+
 @media (max-width: 1100px) {
     .menuButton {
         display: flex;
@@ -573,9 +579,6 @@ h1.centeredText:before {
     }
     .menuList li:hover {
         border: none;
-    }
-    .bigPhotoTextContainer .photoTextContainer {
-        flex-basis: 50%;
     }
     .bigPhotoTextContainer .textContainer {
         margin: 20px 20px;
