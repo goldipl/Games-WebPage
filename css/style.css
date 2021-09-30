@@ -135,22 +135,16 @@ a.first {
     position: relative;
 }
 
-.menuListDrop-menu,
-.menuListRight {
+.menuListDrop-menu {
     position: absolute;
     background: #FFFFFF;
-    width: 100%;
+    width: 120%;
     top: 40px;
     left: 0;
     opacity: 0;
     visibility: hidden;
     box-shadow: 3px 3px 9px 3px rgba(0, 0, 0, .1);
     transition: all 0.4s linear;
-}
-
-.menuListRight {
-    top: 0;
-    left: 110%;
 }
 
 .menuListItem {
@@ -160,12 +154,6 @@ a.first {
 }
 
 .menuListDrop:hover .menuListDrop-menu {
-    opacity: 1;
-    visibility: visible;
-}
-
-.menuListDrop-right:hover .menuListRight {
-    left: 100%;
     opacity: 1;
     visibility: visible;
 }
@@ -520,8 +508,7 @@ h1.centeredText:before {
     .menuList li:hover {
         background-color: transparent;
     }
-    .menuList .menuListDrop-menu,
-    .menuList .menuListRight {
+    .menuList .menuListDrop-menu {
         position: static;
         opacity: 1;
         top: 4rem;
