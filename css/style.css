@@ -380,7 +380,6 @@ h1.centeredText {
 }
 
 .centeredText .read-more:hover {
-    text-decoration: underline;
     color: #FFFFFF;
 }
 
