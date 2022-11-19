@@ -354,7 +354,7 @@ footer {
 h1.centeredText {
     position: absolute;
     top: 40%;
-    width: 50%;
+    width: 40%;
     line-height: 4.0rem;
     text-align: left;
     left: 10%;
@@ -562,13 +562,6 @@ h1.centeredText {
 
 /* SMALLER CENTERED TEXT ON MAIN PAGE ON SMARTPHONES 
 AND SMALLER DEVICES ALSO */
-
-@media (min-width: 1024px) {
-    h1.centeredText {
-        font-size: 4.0rem;
-        width: 60%;
-    }
-}
 
 @media (min-width: 640px) and (max-width: 1023px) {
     h1.centeredText {
