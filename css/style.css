@@ -15,7 +15,7 @@ body {
 }
 
 .textLogo {
-    font-family: 'Odibee Sans', cursive;
+    font-family: 'Changa', sans-serif;
     color: #d80a0a !important;
     font-size: 1.8rem !important;
     padding: 1.0rem;
@@ -66,9 +66,9 @@ h2 {
 /* === Navigation === */
 
 .nav {
-    background: linear-gradient(#d80a0a, #222222 40%);
+    background: rgba(0, 0, 0, 0.82);
     position: fixed;
-    box-shadow: 3px 3px 24px 0 #d80a0a;
+    box-shadow: 1px 1px 36px -12px #d80a0a;
     width: 100%;
     margin: auto;
     display: flex;
@@ -214,21 +214,11 @@ a.first {
 
 .headerBig {
     height: 100vh;
-    background: url(../img/background01.jpg);
+    background: url(../img/main-page-background.jpeg);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    animation: zooming 4s infinite alternate;
-}
-
-@keyframes zooming {
-    0% {
-        background-size: 115% 115%;
-    }
-    100% {
-        background-size: 100% 100%;
-    }
 }
 
 .whiteSection {
@@ -238,7 +228,7 @@ a.first {
 
 .colorSection {
     color: white;
-    background: url(../img/background01.jpg);
+    background: url(../img/main-page-background.jpeg);
     background-position-x: 0%;
     background-position-y: 0%;
     background-repeat: repeat;
@@ -307,7 +297,7 @@ footer {
 
 .footerSection {
     background: none;
-    background-color: #d80a0a;
+    background-color: #000000;
     color: #FFFFFF;
 }
 
@@ -341,6 +331,7 @@ footer {
     margin-bottom: 10px;
     border: 3px dashed #FFFFFF;
     flex-grow: 1;
+    background-color: #000000cf;
 }
 
 .containerLabels_Text p {
@@ -358,43 +349,39 @@ footer {
     text-align: left;
 }
 
-
 /* CENTERED TEXT ON MAIN PAGE */
 
 h1.centeredText {
     position: absolute;
-    top: 50%;
+    top: 40%;
+    width: 50%;
     line-height: 4.0rem;
-    text-align: center;
-    left: 0;
+    text-align: left;
+    left: 10%;
     right: 0;
     color: #FFFFFF;
     font-size: 4.0rem;
     z-index: 1;
+    transition: 0.5s;
+    text-shadow: 4px 4px 6px #000000;
 }
 
-h1.centeredText:after {
-    display: block;
-    content: '';
-    width: 80%;
-    height: 4px;
-    background: #FFFFFF;
-    position: absolute;
-    bottom: -40px;
-    left: 50%;
-    transform: translate(-50%, 0);
+.centeredText .read-more {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 240px;
+    font-size: 2rem;
+    margin-top: 16px;
+    margin-left: -12px;
+    color: #d80a0a;
+    transition: 0.5s;
 }
 
-h1.centeredText:before {
-    display: block;
-    content: '';
-    width: 80%;
-    height: 4px;
-    background: #FFFFFF;
-    position: absolute;
-    top: -40px;
-    left: 50%;
-    transform: translate(-50%, 0);
+.centeredText .read-more:hover {
+    text-decoration: underline;
+    color: #FFFFFF;
 }
 
 
@@ -489,7 +476,7 @@ h1.centeredText:before {
     }
     .menuList.open {
         transform: translateX(0);
-        background: url(../img/background01.jpg);
+        background: url(../img/main-page-background.jpeg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -579,6 +566,7 @@ AND SMALLER DEVICES ALSO */
 @media (min-width: 1024px) {
     h1.centeredText {
         font-size: 4.0rem;
+        width: 60%;
     }
 }
 
@@ -586,6 +574,7 @@ AND SMALLER DEVICES ALSO */
     h1.centeredText {
         font-size: 3.5rem;
         word-wrap: break-word;
+        width: 70%;
     }
 }
 
@@ -593,6 +582,7 @@ AND SMALLER DEVICES ALSO */
     h1.centeredText {
         font-size: 2.5rem;
         word-wrap: break-word;
+        width: 80%;
     }
     .bigPhotoTextContainer .photoTextContainer {
         flex-basis: 100%;
