@@ -21,7 +21,7 @@ body {
     text-shadow: 2px 2px 16px #d15b5b;
     position: absolute;
     padding: 1rem 0;
-    top: 0;
+    top: 54px;
     left: 10%;
 }
 
@@ -83,7 +83,9 @@ h2 {
     z-index: 999;
     line-height: 100%;
     flex-direction: column;
-    top: 60px;
+    background: #000000bd;
+    height: 140px;
+    padding-top: 60px;
 }
 
 .nav a {
@@ -457,7 +459,7 @@ h1.centeredText {
 
 @media (max-width: 1499px) {
     .nav {
-        top: 0;
+        padding-top: 0;
     }
     .textLogo {
         position: relative;
@@ -481,7 +483,7 @@ h1.centeredText {
     .menuButton {
         position: absolute;
         display: flex;
-        top: 30px;
+        top: 22px;
         right: 24px;
     }
     .nav .menuList {
